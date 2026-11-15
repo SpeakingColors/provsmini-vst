@@ -12,7 +12,7 @@
 Controller plugin for the Behringer PRO VS Mini vector synthesizer on Linux.
 
 ## Status
-Planning stage.
+Planning stage. There is no plugin, no code and no window yet: only [device notes](docs/DEVICE-NOTES.md) (confirmed facts and open items) and the [roadmap](ROADMAP.md). See the [web page](docs/index.html).
 
 <p align="center">
   <a href="https://ko-fi.com/studio87"><img src="https://img.shields.io/badge/Support_Studio_87-on_Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white" alt="Support Studio 87 on Ko-fi"></a>
