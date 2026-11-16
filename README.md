@@ -22,6 +22,7 @@ Planning stage. There is no plugin, no code and no window yet: only [device note
 
 ## Docs
 - [Device notes](docs/DEVICE-NOTES.md): what is confirmed from manuals, and what is still missing.
+- [MIDI implementation](docs/MIDI-IMPLEMENTATION.md): CC and SysEx map with source and status per row (incomplete).
 - [Roadmap](ROADMAP.md)
 
 ## License

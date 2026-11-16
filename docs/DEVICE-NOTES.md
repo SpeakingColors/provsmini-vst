@@ -59,6 +59,6 @@ Also official (Firmware 2.0.0 release notes): CC 5 = portamento, CC 9 = FX engin
 
 ## Open items
 
-1. Re-check the CC list and ranges against the original Behringer PDF; confirm on hardware.
+1. Re-check the CC list and ranges against the original Behringer PDF; confirm on hardware (status per row: [MIDI-IMPLEMENTATION.md](MIDI-IMPLEMENTATION.md)).
 2. SysEx program and pattern layouts.
 3. Whether the updater needs SynthTribe on Windows only; a Linux route for firmware is a separate tool in our plan.
