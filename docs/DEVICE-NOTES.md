@@ -1,6 +1,6 @@
 # PRO VS Mini: device notes
 
-Sources: Behringer PRO VS MINI Quick Start Guide (project files) and Firmware 2.0.0 release notes (2024-12-08). A "35 parameter CC list from midi.guide" was mentioned in earlier notes but is not in our files, so it is not reproduced here.
+Sources: Behringer PRO VS MINI Quick Start Guide (project files) and Firmware 2.0.0 release notes (2024-12-08). A "35 parameter CC list from midi.guide" was mentioned in earlier notes but is not in our files, so it is not reproduced here (the table below is from the Quick Start Guide instead).
 
 ## Hardware (Quick Start Guide)
 
@@ -24,8 +24,41 @@ Sources: Behringer PRO VS MINI Quick Start Guide (project files) and Firmware 2.
 - Sync source: Internal, MIDI, USB or Trigger; sync type 1, 2, 4, 24 or 48 ppq.
 - Factory Reset also shows the firmware version.
 
+## MIDI CC list (printed in the Behringer PRO VS MINI Quick Start Guide)
+
+Source tag for every row: "official: PRO VS MINI Quick Start Guide, MIDI CC table (page 75 of the 82-page Spanish copy on manualslib.mx; the original Behringer PDF could not be downloaded in this check)". Untested on hardware. The ranges were read from a text extraction of that page and matched to the CC numbers by position, so re-check them against the Behringer PDF before using them in code.
+
+| CC | Parameter | Range as read |
+| --- | --- | --- |
+| 1 | Modulation | 0-127 |
+| 24, 25, 26, 27 | Voice A, B, C, D wave | 0-127 |
+| 28 | LFO 2 amount | 0-99 |
+| 47 | Filter envelope amount | 0-127 |
+| 54, 55 | LFO 1, LFO 2 waveform (triangle, square, saw) | 0-127 |
+| 56 | LFO 1 destination (VCF, OSC) | 0-127 |
+| 70 | LFO 1 amount | 0-99 |
+| 71 | Filter resonance | 0-99 |
+| 72, 73 | LFO 1, LFO 2 rate | 0-99 |
+| 74 | Filter cutoff | 0-99 |
+| 81, 82, 83, 84 | Amplitude envelope attack, decay, sustain, release | 0-99 |
+| 85, 86, 87, 88 | Filter envelope attack, decay, sustain, release | 0-99 |
+| 91, 92 | Chorus depth, rate | 0-99 |
+| 111, 112, 113, 114 | Voice A, B, C, D fine tuning | 0-99 |
+| 115, 116, 117, 118 | Voice A, B, C, D coarse tuning | 0-99 |
+
+Known problems in the printed table: CC 118 is labelled "Voice C Coarse Tuning", the same as CC 117; it is probably Voice D, but that is a guess (UNVERIFIED). Value-to-waveform mapping for the wave CCs is not printed in what we read (UNVERIFIED).
+
+Also official (Firmware 2.0.0 release notes): CC 5 = portamento, CC 9 = FX engine control (chorus, ensemble, reverb). The CC 9 value layout is not documented (UNVERIFIED).
+
+## Not documented (as far as we found, checked 2026-11-15)
+
+- No NRPN documentation was found for this device.
+- No SysEx specification was found: the guide only names the menu items (Prog Bulk, Prog Single, Patt Bulk, Patt Single). The byte layout is unknown (UNVERIFIED, needs an owner capture).
+- Program change behaviour and the exact USB MIDI port name are not documented in what we read.
+- The Behringer Quick Start Guide PDF and release notes on the Music Tribe CDN returned server errors when fetched, so the table above comes from a mirror.
+
 ## Open items
 
-1. Full CC list and values (midi.guide or Behringer chart).
+1. Re-check the CC list and ranges against the original Behringer PDF; confirm on hardware.
 2. SysEx program and pattern layouts.
 3. Whether the updater needs SynthTribe on Windows only; a Linux route for firmware is a separate tool in our plan.
