@@ -26,7 +26,7 @@ Sources: Behringer PRO VS MINI Quick Start Guide (project files) and Firmware 2.
 
 ## MIDI CC list (printed in the Behringer PRO VS MINI Quick Start Guide)
 
-Source tag for every row: "official: PRO VS MINI Quick Start Guide, MIDI CC table (page 75 of the 82-page Spanish copy on manualslib.mx; the original Behringer PDF could not be downloaded in this check)". Untested on hardware. The ranges were read from a text extraction of that page and matched to the CC numbers by position, so re-check them against the Behringer PDF before using them in code.
+Source tag for every row: "official: PRO VS MINI Quick Start Guide V 2.0, MIDI continuous controller table (PDF page 75 of the 82-page multilingual file)". Checked again on 2026-11-23 against that PDF: the CC numbers and ranges in the table below match it. Untested on hardware.
 
 | CC | Parameter | Range as read |
 | --- | --- | --- |
@@ -55,7 +55,7 @@ Also official (Firmware 2.0.0 release notes): CC 5 = portamento, CC 9 = FX engin
 - No NRPN documentation was found for this device.
 - No SysEx specification was found: the guide only names the menu items (Prog Bulk, Prog Single, Patt Bulk, Patt Single). The byte layout is unknown (UNVERIFIED, needs an owner capture).
 - Program change behaviour and the exact USB MIDI port name are not documented in what we read.
-- The Behringer Quick Start Guide PDF and release notes on the Music Tribe CDN returned server errors when fetched, so the table above comes from a mirror.
+- The Music Tribe CDN returned server errors for the Quick Start Guide and release notes; the guide was read from the same PDF served by Adorama. The Firmware 2.0.0 release notes (CC 5 and CC 9) were not re-read.
 
 ## Open items
 

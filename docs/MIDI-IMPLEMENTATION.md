@@ -2,9 +2,9 @@
 
 Device: Behringer PRO VS MINI (4-voice hybrid vector synthesizer, 5 voices from firmware 2.0.0). Checked 2026-11-16.
 
-Status of this page: the manufacturer PDF could not be fetched from the work environment (hosts blocked); the CC table comes from a manualslib mirror of the Quick Start Guide as recorded in DEVICE-NOTES.md. Nothing here has been tested on hardware.
+Status of this page: the CC table below was compared on 2026-11-23 with the official Behringer "PRO VS MINI Quick Start Guide" V 2.0 (multilingual PDF, 82 pages, created 2024-06-13; the MIDI continuous controller table is on PDF page 75, printed pages 148 and 149). The copy used was the PDF served by Adorama's product-manual page, the same file Behringer ships. Every CC number and range in the table matches the guide. The guide itself prints "Voice C Coarse Tuning" for both CC 117 and CC 118, so CC 118 is unclear in the manufacturer's own text. CC 5 and CC 9 are not in this guide; they come from the Firmware 2.0.0 release notes. The guide lists no NRPN and no SysEx. Nothing here has been tested on hardware.
 
-Status values: documented (manufacturer text or mirror of it, cited), untested (not tried on the owner's device), captured (owner's device; none yet).
+Status values: documented (manufacturer text, cited), untested (not tried on the owner's device), captured (owner's device; none yet).
 
 ## Channels and switches (menu items)
 
@@ -22,22 +22,22 @@ Source of the first table: PRO VS MINI Quick Start Guide, MIDI CC table (page 75
 
 | CC | Parameter | Range as read | Status |
 |---|---|---|---|
-| 1 | Modulation | 0-127 | documented (mirror), untested |
-| 24-27 | Voice A, B, C, D wave | 0-127 | documented (mirror), untested |
-| 28 | LFO 2 amount | 0-99 | documented (mirror), untested |
-| 47 | Filter envelope amount | 0-127 | documented (mirror), untested |
-| 54, 55 | LFO 1, LFO 2 waveform | 0-127 | documented (mirror), untested |
-| 56 | LFO 1 destination (VCF, OSC) | 0-127 | documented (mirror), untested |
-| 70 | LFO 1 amount | 0-99 | documented (mirror), untested |
-| 71 | Filter resonance | 0-99 | documented (mirror), untested |
-| 72, 73 | LFO 1, LFO 2 rate | 0-99 | documented (mirror), untested |
-| 74 | Filter cutoff | 0-99 | documented (mirror), untested |
-| 81-84 | Amp envelope A, D, S, R | 0-99 | documented (mirror), untested |
-| 85-88 | Filter envelope A, D, S, R | 0-99 | documented (mirror), untested |
-| 91, 92 | Chorus depth, rate | 0-99 | documented (mirror), untested |
-| 111-114 | Voice A-D fine tuning | 0-99 | documented (mirror), untested |
-| 115-117 | Voice A-C coarse tuning | 0-99 | documented (mirror), untested |
-| 118 | Printed as Voice C coarse (duplicate of 117); probably Voice D, guess | 0-99 | unverified, documented (mirror), untested |
+| 1 | Modulation | 0-127 | documented (official Quick Start Guide V 2.0), untested |
+| 24-27 | Voice A, B, C, D wave | 0-127 | documented (official Quick Start Guide V 2.0), untested |
+| 28 | LFO 2 amount | 0-99 | documented (official Quick Start Guide V 2.0), untested |
+| 47 | Filter envelope amount | 0-127 | documented (official Quick Start Guide V 2.0), untested |
+| 54, 55 | LFO 1, LFO 2 waveform | 0-127 | documented (official Quick Start Guide V 2.0), untested |
+| 56 | LFO 1 destination (VCF, OSC) | 0-127 | documented (official Quick Start Guide V 2.0), untested |
+| 70 | LFO 1 amount | 0-99 | documented (official Quick Start Guide V 2.0), untested |
+| 71 | Filter resonance | 0-99 | documented (official Quick Start Guide V 2.0), untested |
+| 72, 73 | LFO 1, LFO 2 rate | 0-99 | documented (official Quick Start Guide V 2.0), untested |
+| 74 | Filter cutoff | 0-99 | documented (official Quick Start Guide V 2.0), untested |
+| 81-84 | Amp envelope A, D, S, R | 0-99 | documented (official Quick Start Guide V 2.0), untested |
+| 85-88 | Filter envelope A, D, S, R | 0-99 | documented (official Quick Start Guide V 2.0), untested |
+| 91, 92 | Chorus depth, rate | 0-99 | documented (official Quick Start Guide V 2.0), untested |
+| 111-114 | Voice A-D fine tuning | 0-99 | documented (official Quick Start Guide V 2.0), untested |
+| 115-117 | Voice A-C coarse tuning | 0-99 | documented (official Quick Start Guide V 2.0), untested |
+| 118 | Printed as Voice C coarse (duplicate of 117); probably Voice D, guess | 0-99 | unverified, documented (official Quick Start Guide V 2.0), untested |
 | 5 | Portamento | not documented | documented (Firmware 2.0.0 release notes), untested |
 | 9 | FX engine (Chorus, Ensemble, Reverb) | value layout not documented | documented (Firmware 2.0.0 release notes), untested |
 
